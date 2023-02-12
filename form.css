@@ -15,7 +15,7 @@ html {
 
 body {
     width: 100%;
-    background-image: url(/img/main-bg.svg);
+    background-color: #191970;
     background-size: cover;
     background-position: center center;
     font-family: sans-serif;
@@ -50,7 +50,7 @@ form {
     width: 60%;
     margin: auto;
     padding: 1rem;
-    background-image: url(/img/dragon-scales.svg);
+    background-color: #483D8B;
     font-family: sans-serif;
 }
 
