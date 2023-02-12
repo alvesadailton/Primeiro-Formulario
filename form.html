@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Formulário</title>
+    <link rel="stylesheet" href="form.css">
+</head>
+
+<body>
+
+    <body>
+        <div class="container">
+            <header class="header">
+                <h1 id="title" class="text-center">Formulário Alves</h1>
+                <p id="description" class="description-text-center">Obrigado por dedicar um pouco do seu tempo para este
+                    formulário</p>
+            </header>
+            <form id="survey-form">
+                <div class="form-group">
+                    <label id="name-label" for="name">Nome</label>
+                    <input type="text" name="name" class="form-control" placeholder="Digite seu nome" required>
+                </div>
+                <div class="form-group">
+                    <label for="email" id="email-label">Email</label>
+                    <input type="email" name="email" class="form-control" placeholder="Digite seu email" required>
+                </div>
+                <div class="form-group">
+                    <label for="number" id="number-label">Idade</label>
+                    <input type="number" name="number" class="form-control" placeholder="12" min="12" max="120"
+                        required>
+                </div>
+                <div class="form-group">
+                    <p>Como você descreve sua atual situação?</p>
+                    <select name="role" id="dropdown" class="form-control" required>
+                        <option value=""></option>
+                        <option value="student"> Estudante</option>
+                        <option value="job">Trabalhador</option>
+                        <option value="student+job">Estudante e Trabalhador</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <p>Você recomendaria o site para algum amigo?</p>
+                    <label>
+                        <input type="radio" name="user-recommend" value="Sim" class="input-radio">Sim
+                    </label>
+                    <label>
+                        <input type="radio" name="user-recommend" value="não" class="input-radio">Não
+                    </label>
+                </div>
+                <div class="form-group">
+                    <p>Qual a sua área de interesse na programação?</p>
+                    <select name="most-like" id="mostlike" class="form-control" required>
+                        <option value=""></option>
+                        <option value="front-end">Front-end</option>
+                        <option value="back-end">Back-end</option>
+                        <option value="full-stack">Full-stack</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <p>Deixe algum comentário ou sugestão aqui:</p>
+                    <textarea name="comment" id="comments" class="input-textarea" placeholder="Digite aqui..." cols="10"
+                        rows="5"></textarea>
+                </div>
+                <div class="form-group">
+                    <button type="submit" id="submit" class="submit-button">Entregar</button>
+                </div>
+            </form>
+        </div>
+        <div class="footer"></div>
+        <footer>
+            <p class="direitos">Quer entrar em contato comigo? <a href="https://www.instagram.com/notliad4/" target="_blank"> Clique aqui </a></p>
+        </footer>
+    </body>
+
+</html>
